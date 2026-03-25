@@ -193,8 +193,8 @@ body.coms-active {
 
 /* Form col — auto height, centered, max fits viewport */
 #formCol {
-    max-width: 320px !important;
-    flex: 0 0 320px !important;
+    max-width: 380px !important;
+    flex: 0 0 380px !important;
     margin-left: 0 !important;
     max-height: calc(100vh - 110px);
     overflow-y: auto;
@@ -229,8 +229,8 @@ body.coms-active {
 
 /* When admin panel is open, form col shrinks */
 #mainRow.admin-open #formCol {
-    flex: 0 0 320px !important;
-    max-width: 320px !important;
+    flex: 0 0 380px !important;
+    max-width: 380px !important;
 }
 
 /* Tablet & below — allow scroll */
