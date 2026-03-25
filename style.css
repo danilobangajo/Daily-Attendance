@@ -33,6 +33,7 @@ body {
     transition: background 0.6s cubic-bezier(0.4,0,0.2,1);
     padding-top: 70px;
     height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -190,15 +191,20 @@ body.coms-active {
     min-height: 0;
 }
 
-/* Form col — auto height, centered */
+/* Form col — auto height, centered, max fits viewport */
 #formCol {
-    max-width: 420px !important;
-    flex: 0 0 420px !important;
+    max-width: 300px !important;
+    flex: 0 0 300px !important;
     margin-left: 0 !important;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #formCol .fixed-height-card {
     height: auto !important;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
 }
 
 /* Admin panel — fills remaining height */
@@ -223,8 +229,8 @@ body.coms-active {
 
 /* When admin panel is open, form col shrinks */
 #mainRow.admin-open #formCol {
-    flex: 0 0 300px !important;
-    max-width: 300px !important;
+    flex: 0 0 280px !important;
+    max-width: 280px !important;
 }
 
 /* Tablet & below — allow scroll */
